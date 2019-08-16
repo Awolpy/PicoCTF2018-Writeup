@@ -1,0 +1,6 @@
+ During your adventure, you will likely encounter a situation where you need to process data that you receive over the network rather than through a file. Can you find a way to save the output from this program and search for the flag? Connect with 2018shell.picoctf.com 2015. 
+ 
+ Netcat into the IP address and port listed above will just spit out all the code out on to the screen. It is impossible to look at, so you will need to export it somehow.
+ I ran the following command: nc 2018shell.picoctf.com 2015 | sort > picoCTF
+ 
+With that command it allowed me to export all of the text to a .txt file and I was able to sort by "picoCTF" and found the flag.
